@@ -12,13 +12,17 @@ RSpec.describe 'The IsleOfDogs App' do
     end
 
     context "Home Page" do
-        it "A message saying 'Welcome to Isle of Dogs!'" do
+        it "a message saying 'Welcome to Isle of Dogs!'" do
             get '/'
             expect(last_response.body).to include('Welcome to Isle Of Dogs!')
         end
-        it "Contains a home link that is an anchor emoji" do
+        it "contains a home link that is an anchor emoji" do
             get '/'
             expect(last_response.body).to include('&#9875;')
+        end
+        it "contains a section about IOD with a heading of 'What is IOD?'" do
+            get '/'
+            expect(last_response.body).to include('What is I.O.D?')
         end
     end
 end
