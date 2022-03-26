@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'erb'
 
-
 get '/' do
-    "Welcome to Isle Of Dogs!"
+    erb :home_page
 end
