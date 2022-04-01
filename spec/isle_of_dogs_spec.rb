@@ -28,5 +28,21 @@ RSpec.describe 'The IsleOfDogs App' do
             get '/'
             expect(last_response.body).to include('Canary Wharf')
         end
+        it "contains a section about Greenwich Foot Tunnel with a heading of 'Greenwich Foot Tunnel'" do
+            get '/'
+            expect(last_response.body).to include('Greenwich Foot Tunnel')
+        end
+        it "contains a section about Billingsgate Market with a heading of 'Billingsgate Market'" do
+            get '/'
+            expect(last_response.body).to include('Billingsgate Market')
+        end
+        it "contains a section about London Marathon with a heading of 'London Marathon'" do
+            get '/'
+            expect(last_response.body).to include('London Marathon')
+        end
+        it "contains a section about Mudchute Farm with a heading of 'Mudchute Farm'" do
+            get '/'
+            expect(last_response.body).to include('Mudchute Farm')
+        end
     end
 end
