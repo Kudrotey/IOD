@@ -24,5 +24,9 @@ RSpec.describe 'The IsleOfDogs App' do
             get '/'
             expect(last_response.body).to include('What is I.O.D?')
         end
+        it "contains a section about Canary Wharf with a heading of 'Canary Wharf'" do
+            get '/'
+            expect(last_response.body).to include('Canary Wharf')
+        end
     end
 end
