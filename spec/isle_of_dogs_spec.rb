@@ -45,4 +45,11 @@ RSpec.describe 'The IsleOfDogs App' do
             expect(last_response.body).to include('Mudchute Farm')
         end
     end
+
+    context "IOD" do
+        it "contains images and a title saying 'Isle Of Dogs'" do
+            get '/iod'
+            expect(last_response.body).to include('Isle Of Dogs')
+        end
+    end
 end
