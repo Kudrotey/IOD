@@ -12,3 +12,7 @@ end
 get '/canary-wharf' do
     erb :canary_wharf
 end
+
+get '/foot-tunnel' do
+    erb :foot_tunnel
+end

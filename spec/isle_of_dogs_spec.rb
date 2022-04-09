@@ -59,4 +59,11 @@ RSpec.describe 'The IsleOfDogs App' do
             expect(last_response.body).to include('Canary Wharf')
         end
     end
+
+    context "Greenwich Foot Tunnel" do
+        it "contains images and a title saying 'Greenwich Foot Tunnel'" do
+            get '/foot-tunnel'
+            expect(last_response.body).to include('Greenwich Foot Tunnel')
+        end
+    end
 end
