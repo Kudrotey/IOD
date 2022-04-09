@@ -16,3 +16,11 @@ end
 get '/foot-tunnel' do
     erb :foot_tunnel
 end
+
+get '/billingsgate-market' do
+    erb :billingsgate_market
+end
+
+get '/london-marathon' do
+    erb :london_marathon
+end

@@ -66,4 +66,18 @@ RSpec.describe 'The IsleOfDogs App' do
             expect(last_response.body).to include('Greenwich Foot Tunnel')
         end
     end
+
+    context "Billingsgate Market" do
+        it "contains images and a title saying 'Billingsgate Market'" do
+            get '/billingsgate-market'
+            expect(last_response.body).to include('Billingsgate Market')
+        end
+    end
+
+    context "London Marathon" do
+        it "contains images and a title saying 'London Marathon'" do
+            get '/london-marathon'
+            expect(last_response.body).to include('London Marathon')
+        end
+    end
 end
