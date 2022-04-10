@@ -1,3 +1,3 @@
 require './isle_of_dogs'
 
-run IsleOfDogs
+run Sinatra::Application
