@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'erb'
-require 'rack/flash/test'
 
 get '/' do
     erb :home_page
