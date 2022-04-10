@@ -80,4 +80,11 @@ RSpec.describe 'The IsleOfDogs App' do
             expect(last_response.body).to include('London Marathon')
         end
     end
+
+    context "Mudchute Farm" do
+        it "contains images and a title saying 'Mudchute Farm'" do
+            get '/mudchute-farm'
+            expect(last_response.body).to include('Mudchute Farm')
+        end
+    end
 end
